@@ -1,20 +1,39 @@
- import Image from '../../assets/img/Image1.png'
+ import Image from '../../assets/img/Image1.png';
+ import { SlCalender } from 'react-icons/sl';
+ import { BsArrowUpRight } from 'react-icons/bs';
+
+//  // Import Swiper React components
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// // Import Swiper styles
+// import 'swiper/css';
+// import 'swiper/css/pagination';
+// import 'swiper/css/navigation';
+
+// // import required modules
+// import { Pagination, Navigation } from 'swiper/modules';    
+ 
 function section1Home() {
   return (
-    <section className="relative w-full top-36">
-      <div className="max-w-[1440px] mx-auto w-full h-screen px-14">
-        <div className="flex justify-center items-center gap-4">
+    <section className="relative w-full">
+      <div className="max-w-[1440px] mx-auto w-full h-auto px-14 pt-36">
+        <div className="flex justify-center items-center gap-4 font-Inter">
           <div>
-            <p>headline</p>
-            <h1 className="font-bold font-Nunito text-4xl w-[500px]">Respons PSSI Soal Opsi Pindah dari GBK jika Lolos Babak 3 Kualifikasi</h1>       
-            <p className='w-[470px] mt-3'>Ketua Badan Tim Nasional (BTN) PSSI Sumardji merespons peluang Timnas Indonesia pindah dari Stadion Utama Gelora Bung Karno (GBK) apabila lolos ke putaran ketiga Kualifikasi Piala Dunia 2026.</p>
-            <nav className="flex mt-3 gap-3">
-              <p>dd</p>
-              <p>22 januari 2024</p>
+            <p className="text-[#526071] font-semibold">Headline</p>
+            <h1 className="font-extrabold mt-5 font-Nunito text-4xl w-[500px]">Respons PSSI Soal Opsi Pindah dari GBK jika Lolos Babak 3 Kualifikasi</h1>
+            <p className="w-[470px] mt-3">Ketua Badan Tim Nasional (BTN) PSSI Sumardji merespons peluang Timnas Indonesia pindah dari Stadion Utama Gelora Bung Karno (GBK) apabila lolos ke putaran ketiga Kualifikasi Piala Dunia 2026.</p>
+            <nav className="flex items-center mt-3 gap-2">
+              <div>
+                <SlCalender className="font-extrabold" />
+              </div>
+              <p className="text-sm">22 januari 2024</p>
             </nav>
-            <nav className='mt-3 flex gap-3'>
-              <a href="">Baca Selengkapnya</a>
-              <p>shd</p>
+            <nav className="mt-3 flex items-center gap-2">
+              <a href="" className="text-[#0090FF]">
+                Baca Selengkapnya
+              </a>
+              <div>
+                <BsArrowUpRight className="text-[#0090FF]" />
+              </div>
             </nav>
           </div>
           <div>
@@ -28,6 +47,25 @@ function section1Home() {
           <p>5</p>
           <p>k</p>
         </div>
+
+        {/* <Swiper
+          pagination={{
+            type: 'fraction',
+          }}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+          className="mySwiper h-[420px] w-full bg-slate-500"
+        >
+          <SwiperSlide>Slide 1</SwiperSlide>
+          <SwiperSlide>Slide 2</SwiperSlide>
+          <SwiperSlide>Slide 3</SwiperSlide>
+          <SwiperSlide>Slide 4</SwiperSlide>
+          <SwiperSlide>Slide 5</SwiperSlide>
+          <SwiperSlide>Slide 6</SwiperSlide>
+          <SwiperSlide>Slide 7</SwiperSlide>
+          <SwiperSlide>Slide 8</SwiperSlide>
+          <SwiperSlide>Slide 9</SwiperSlide>
+        </Swiper> */}
       </div>
     </section>
   );

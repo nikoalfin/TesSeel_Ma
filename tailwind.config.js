@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily:{
         Nunito :["Nunito sans","sans-serif"],
+        Inter : ["roboto"]
       }
     },
   },
