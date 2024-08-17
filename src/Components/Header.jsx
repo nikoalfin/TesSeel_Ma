@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import LogoWhite from '../assets/img/Logo-white.png';
-import LogoBlue from '../assets/img/Logo.png';
+import LogoBlue from '../assets/img/logo.png';
 import { useFilter } from '../Context/FilterContext';
 
 function Header() {
