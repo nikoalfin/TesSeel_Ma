@@ -3,39 +3,46 @@ import { IoSearchOutline } from 'react-icons/io5';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useFilter } from '../../Context/FilterContext';
+import ReactPaginate from 'react-paginate';
 
-function section3Home() {
+function Section3Home() {
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-const [data, setData] = useState([]);
-const [loading, setLoading] = useState(true);
-const [error, setError] = useState(null);
+  const { Filter, setFilter } = useFilter();
 
-const { Filter, setFilter } = useFilter();
+  const [currentPage, setCurrentPage] = useState(0);
 
-useEffect(() => {
-  console.log('https://api-berita-indonesia.vercel.app/cnn/' + Filter);
-  axios
-    .get('https://api-berita-indonesia.vercel.app/cnn/' + Filter)
-    .then((response) => {
-      setData(response.data.data.posts);
-      setLoading(false);
-    })
-    .catch((error) => {
-      setError(error);
-      setLoading(false);
-    });
-}, [Filter]); // Empty dependency array means this effect runs once on mount
+  const perPage = typeof window !== 'undefined' && window.innerWidth < 768 ? 1 : 8;
+  const pageCount = Math.ceil(data && data.length / perPage);
 
-if (loading) {
-  return <p>Loading...</p>;
-}
+  useEffect(() => {
+    axios
+      .get('https://api-berita-indonesia.vercel.app/cnn/' + Filter)
+      .then((response) => {
+        setData(response.data.data.posts);
+        setLoading(false);
+      })
+      .catch((error) => {
+        setError(error);
+        setLoading(false);
+      });
+  }, [Filter]); // Empty dependency array means this effect runs once on mount
 
-if (error) {
-  return <p>Error: {error.message}</p>;
-}
+  if (loading) {
+    return <p>Loading...</p>;
+  }
 
-console.log(data);
+  if (error) {
+    return <p>Error: {error.message}</p>;
+  }
 
+  const offset = currentPage * perPage;
+  const currentPageData = data ? data.slice(offset, offset + perPage) : '';
+  const handlePageChange = ({ selected }) => {
+    setCurrentPage(selected);
+  };
 
   return (
     <section className="relative w-full">
@@ -52,17 +59,30 @@ console.log(data);
         </div>
 
         <div className="flex items-center justify-center gap-12 flex-wrap mt-12">
-          {data.map((item, i) => (
-            <Card2 key={i}img={item.thumbnail}title={item.title} date={item.pubDate} type='Nasional'/>
+          {currentPageData.map((item, i) => (
+            <Card2 key={i} img={item.thumbnail} title={item.title} date={item.pubDate} type="Nasional" />
           ))}
         </div>
         <div className="flex items-center mt-14">
-          <p>showing 1 to 10 of 97 results</p>
-          <div></div>
+          <ReactPaginate
+            previousLabel={'<'}
+            nextLabel={'>'}
+            breakLabel={'...'}
+            pageCount={pageCount}
+            marginPagesDisplayed={1}
+            pageRangeDisplayed={2}
+            onPageChange={handlePageChange}
+            containerClassName={'pagination'}
+            activeClassName={'active bg-blue_color border-none text-white_color'}
+            className="flex justify-center space-x-5 mt-6 flex-wrap w-full"
+            previousClassName="flex justify-center items-center w-[40px] h-[40px] rounded-full font-semibold text-text_color border-2 border-gray_color"
+            nextClassName="border-2 border-gray_color border-gray-500 flex justify-center items-center w-[40px] h-[40px] rounded-full font-semibold text-text_color"
+            pageClassName="border-2 border-gray_color flex justify-center items-center w-[40px] h-[40px] rounded-full font-semibold text-text-black mb-4"
+          />
         </div>
       </div>
     </section>
   );
 }
 
-export default section3Home;
+export default Section3Home;

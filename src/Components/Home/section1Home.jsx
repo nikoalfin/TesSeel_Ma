@@ -1,17 +1,10 @@
  import Image from '../../assets/img/Image1.png';
  import { SlCalender } from 'react-icons/sl';
  import { BsArrowUpRight } from 'react-icons/bs';
+ import { MdKeyboardArrowLeft } from 'react-icons/md';
+ import { MdKeyboardArrowRight } from 'react-icons/md';
 
-//  // Import Swiper React components
-// import { Swiper, SwiperSlide } from 'swiper/react';
-// // Import Swiper styles
-// import 'swiper/css';
-// import 'swiper/css/pagination';
-// import 'swiper/css/navigation';
-
-// // import required modules
-// import { Pagination, Navigation } from 'swiper/modules';    
- 
+   
 function section1Home() {
   return (
     <section className="relative w-full">
@@ -41,11 +34,15 @@ function section1Home() {
           </div>
         </div>
         <div className="flex justify-center gap-3 items-center mt-6">
-          <p> k </p>
+          <p>
+            <MdKeyboardArrowLeft className='w-6 h-6 hover:cursor-pointer'/>
+          </p>
           <p>1</p>
           <p>dari</p>
           <p>5</p>
-          <p>k</p>
+          <p>
+            <MdKeyboardArrowRight className='w-6 h-6 hover:cursor-pointer'/>
+          </p>
         </div>
 
         {/* <Swiper

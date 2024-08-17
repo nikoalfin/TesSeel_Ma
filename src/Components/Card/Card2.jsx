@@ -2,16 +2,22 @@
 function Card2(props){
   const {img,title,type,date } = props;
 
+   const formattedDate = new Date(date).toLocaleDateString('id-ID', {
+     day: 'numeric',
+     month: 'long',
+     year: 'numeric'
+   });
+
   return (
-    <div className="relative w-[250px] h-[350px] gap-3">
+    <div className="relative w-[250px] h-[300px] gap-3 hover:cursor-pointer">
       <img src={img} alt="" className="w-64 rounded-xl" />
 
-      <div>
-        <h5 className="text-lg font-extrabold font-Nunito">{title}</h5>
+      <div className="flex flex-col justify-between items-start">
+        <h5 className="text-lg font-extrabold font-Nunito h-24 py-2">{title}</h5>
 
-        <div className="flex items-center gap-3 mt-9 text-base">
+        <div className="flex items-center gap-8 text-base bottom-0">
           <p className="text-[#0090FF] font-bold font-Inter">{type}</p>
-          <p>{date}</p>
+          <p className="font-Inter text-[#526071]">{formattedDate}</p>
         </div>
       </div>
     </div>

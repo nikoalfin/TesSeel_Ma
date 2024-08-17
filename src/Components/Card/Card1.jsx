@@ -1,7 +1,7 @@
 import Image2 from '../../assets/img/Image2.png'
 function Card1(){
     return (
-      <div className="relative flex justify-center w-[350px] h-auto gap-3">
+      <div className="relative flex justify-center w-[350px] h-auto gap-3 hover:cursor-pointer">
         <img src={Image2} alt="" className="w-40 rounded-xl" />
 
         <div>

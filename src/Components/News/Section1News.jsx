@@ -11,7 +11,7 @@ function Section1News() {
       <img src={Image5} alt="" className="w-[800px] rounded-3xl mt-5" />
       <p className="text-[#959EA9] mt-3">Rumput GBK tidak kunjung bagus, Timnas Indonesia bisa pindah kandang. (CNN Indonesia/Adhi Wicaksono)</p>
 
-      <div className='flex flex-col mt-3 gap-4'>
+      <div className='flex flex-col mt-3 gap-4 font-Inter'>
         <p>
           Jakarta, CNN Indonesia --Ketua Badan Tim Nasional (BTN) PSSI Sumardji merespons peluang Timnas Indonesia pindah dari Stadion Utama Gelora Bung Karno (GBK) apabila lolos ke putaran ketiga Kualifikasi Piala Dunia 2026. Akhir-akhir
           ini rumput lapangan Stadion GBK yang jadi markas Indonesia dalam babak kedua Kualifikasi Piala Dunia 2026 kerap bermasalah. Pada pertandingan kandang pertama melawan Vietnam, Maret lalu, rumput GBK rusak parah. PPKGBK selalu
