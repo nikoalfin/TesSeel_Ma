@@ -1,6 +1,6 @@
 import Card1 from "../Card/Card1";
 
-function Section2Home(props){
+function PopularNews(props){
   const {onClick}=props;
   return (
     <section className="relative w-full">
@@ -20,4 +20,4 @@ function Section2Home(props){
   );
 }
 
-export default Section2Home
+export default PopularNews;

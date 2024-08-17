@@ -1,11 +1,10 @@
 import Header from '../Components/Header';
-
-import Section2Home from '../Components/Home/Section2Home';
-import Section3Home from '../Components/Home/Section3Home';
-import Section4Home from '../Components/Home/Section4Home';
 import Footer from '../Components/Footer';
 import { useNavigate } from 'react-router-dom';
 import HeroSection from '../Components/Home/HeroSection';
+import PopularNews from '../Components/Home/PopularNews';
+import RecomenNews from '../Components/Home/RecomenNews';
+import BannerCarosel from '../Components/Home/BannerCarosel';
 
 
 
@@ -20,9 +19,9 @@ function HomePage() {
     <div className="relative">
       <Header />
       <HeroSection />
-      <Section2Home onClick={handleClick} />
-      <Section3Home onClick={handleClick} />
-      <Section4Home />
+      <PopularNews onClick={handleClick} />
+      <RecomenNews onClick={handleClick} />
+      <BannerCarosel />
       <Footer />
     </div>
   );

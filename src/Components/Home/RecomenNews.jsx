@@ -5,7 +5,7 @@ import axios from 'axios';
 import { useFilter } from '../../Context/FilterContext';
 import ReactPaginate from 'react-paginate';
 
-function Section3Home(props) {
+function RecomenNews(props) {
   const{onClick}=props;
 
   const [data, setData] = useState([]);
@@ -87,4 +87,4 @@ function Section3Home(props) {
   );
 }
 
-export default Section3Home;
+export default RecomenNews;

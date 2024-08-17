@@ -8,7 +8,7 @@ import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-function Section4Home() {
+function BannerCarosel() {
   return (
     <section className="relative w-full mt-5">
       <div className="max-w-[1440px] mx-auto w-full h-auto px-36 py-12">
@@ -28,4 +28,4 @@ function Section4Home() {
   );
 }
 
-export default Section4Home;
+export default BannerCarosel;
