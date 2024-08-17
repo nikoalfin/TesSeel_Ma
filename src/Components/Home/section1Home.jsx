@@ -5,7 +5,7 @@
  import { MdKeyboardArrowRight } from 'react-icons/md';
 
    
-function section1Home() {
+function Section1Home() {
   return (
     <section className="relative w-full">
       <div className="max-w-[1440px] mx-auto w-full h-auto px-14 pt-36">
@@ -68,4 +68,4 @@ function section1Home() {
   );
 }
 
-export default section1Home;
+export default Section1Home;

@@ -1,6 +1,6 @@
 import Card1 from "../Card/Card1";
 
-function section2Home(props){
+function Section2Home(props){
   const {onClick}=props;
   return (
     <section className="relative w-full">
@@ -20,4 +20,4 @@ function section2Home(props){
   );
 }
 
-export default section2Home
+export default Section2Home
