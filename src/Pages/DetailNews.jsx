@@ -3,7 +3,7 @@ import Header from '../Components/Header';
 import Section1News from '../Components/News/Section1News';
 import Section2News from '../Components/News/Section2News';
 import Section3News from '../Components/News/Section3News';
-import Section4News from '../Components/News/Section4News';
+import Section4News from '../Components/News/section4News';
 
 function DetailNews() {
   return (
