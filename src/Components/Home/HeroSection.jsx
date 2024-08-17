@@ -1,11 +1,10 @@
- import Image from '../../assets/img/Image1.png';
- import { SlCalender } from 'react-icons/sl';
- import { BsArrowUpRight } from 'react-icons/bs';
- import { MdKeyboardArrowLeft } from 'react-icons/md';
- import { MdKeyboardArrowRight } from 'react-icons/md';
+import Image from '../../assets/img/Image1.png';
+import { SlCalender } from 'react-icons/sl';
+import { BsArrowUpRight } from 'react-icons/bs';
+import { MdKeyboardArrowLeft } from 'react-icons/md';
+import { MdKeyboardArrowRight } from 'react-icons/md';
 
-   
-function Section1Home() {
+function HeroSection() {
   return (
     <section className="relative w-full">
       <div className="max-w-[1440px] mx-auto w-full h-auto px-14 pt-36">
@@ -35,13 +34,13 @@ function Section1Home() {
         </div>
         <div className="flex justify-center gap-3 items-center mt-6">
           <p>
-            <MdKeyboardArrowLeft className='w-6 h-6 hover:cursor-pointer'/>
+            <MdKeyboardArrowLeft className="w-6 h-6 hover:cursor-pointer" />
           </p>
           <p>1</p>
           <p>dari</p>
           <p>5</p>
           <p>
-            <MdKeyboardArrowRight className='w-6 h-6 hover:cursor-pointer'/>
+            <MdKeyboardArrowRight className="w-6 h-6 hover:cursor-pointer" />
           </p>
         </div>
 
@@ -68,4 +67,4 @@ function Section1Home() {
   );
 }
 
-export default Section1Home;
+export default HeroSection;
