@@ -7,9 +7,9 @@ import { FaTelegramPlane } from 'react-icons/fa';
 function Footer() {
   return (
     <section className="relative w-full bg-[#2C3C4D]">
-      <div className="max-w-[1440px] mx-auto w-full h-auto px-36 flex items-start gap-10 text-white py-20">
-        <div className="w-[600px]">
-          <div className="flex justify-center items-center gap-2 -ml-[190px]">
+      <div className="max-w-[1440px] mx-auto w-full h-auto px-14 flex items-start gap-10 text-white py-20">
+        <div className="w-[600px] text-start">
+          <div className="flex justify-center items-center gap-2 -ml-28">
             <img src={Logo} alt="Logo" className="w-10 h-10" />
             <h1 className="font-bold text-2xl">Berita Kini</h1>
           </div>

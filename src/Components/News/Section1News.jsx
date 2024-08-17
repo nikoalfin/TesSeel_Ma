@@ -3,15 +3,15 @@ import Image5 from '../../assets/img/Image5.png';
 function Section1News() {
   return (
     <div>
-      <h1 className="font-extrabold mt-5 font-Nunito text-4xl w-[800px]">Pj. Gubernur Adhy Tekankan Pelayanan Berkualitas saat Sharing Session di RSUD Dr. Soetomo</h1>
+      <h1 className="font-extrabold mt-5 font-Nunito text-2xl w-[570px]">Pj. Gubernur Adhy Tekankan Pelayanan Berkualitas saat Sharing Session di RSUD Dr. Soetomo</h1>
       <div className="flex items-center gap-3 mt-4 text-base font-Inter">
         <p className="text-[#0090FF] font-bold">Publik</p>
         <p>22 Jan 2024</p>
       </div>
       <img src={Image5} alt="" className="w-[800px] rounded-3xl mt-5" />
-      <p className="text-[#959EA9] mt-3">Rumput GBK tidak kunjung bagus, Timnas Indonesia bisa pindah kandang. (CNN Indonesia/Adhi Wicaksono)</p>
+      <p className="text-[#959EA9] mt-3 text-[11px] w-[800px]">Rumput GBK tidak kunjung bagus, Timnas Indonesia bisa pindah kandang. (CNN Indonesia/Adhi Wicaksono)</p>
 
-      <div className='flex flex-col mt-3 gap-4 font-Inter'>
+      <div className='flex flex-col mt-3 gap-4 font-Inter text-sm'>
         <p>
           Jakarta, CNN Indonesia --Ketua Badan Tim Nasional (BTN) PSSI Sumardji merespons peluang Timnas Indonesia pindah dari Stadion Utama Gelora Bung Karno (GBK) apabila lolos ke putaran ketiga Kualifikasi Piala Dunia 2026. Akhir-akhir
           ini rumput lapangan Stadion GBK yang jadi markas Indonesia dalam babak kedua Kualifikasi Piala Dunia 2026 kerap bermasalah. Pada pertandingan kandang pertama melawan Vietnam, Maret lalu, rumput GBK rusak parah. PPKGBK selalu

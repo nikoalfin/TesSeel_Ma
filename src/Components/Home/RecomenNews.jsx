@@ -48,7 +48,7 @@ function RecomenNews(props) {
 
   return (
     <section className="relative w-full">
-      <div className="max-w-[1440px] mx-auto w-full h-auto px-36 py-12">
+      <div className="max-w-[1440px] mx-auto w-full h-auto px-14 py-12">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <nav className="w-1 h-8 bg-[#0090ff]"></nav>
@@ -60,12 +60,12 @@ function RecomenNews(props) {
           </form>
         </div>
 
-        <div className="flex items-center justify-center gap-12 flex-wrap mt-12">
+        <div className="flex items-center justify-center gap-8 flex-wrap mt-12">
           {currentPageData.map((item, i) => (
             <Card2 key={i} img={item.thumbnail} title={item.title} date={item.pubDate} type="Nasional" onClick={onClick}/>
           ))}
         </div>
-        <div className="flex items-center mt-14">
+        <div className="flex items-center">
           <ReactPaginate
             previousLabel={'<'}
             nextLabel={'>'}

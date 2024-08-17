@@ -4,7 +4,7 @@ function PopularNews(props){
   const {onClick}=props;
   return (
     <section className="relative w-full">
-      <div className="max-w-[1440px] mx-auto w-full h-auto px-36 py-12">
+      <div className="max-w-[1440px] mx-auto w-full h-auto px-14 py-12">
         <div className="flex items-center gap-2">
           <nav className="w-1 h-8 bg-[#0090FF]"></nav>
           <h3 className="text-xl font-bold font-Nunito">Berita Terpopuler</h3>

@@ -1,4 +1,4 @@
-import Card1 from "../Card/Card1";
+import Card4 from "../Card/Card4";
 
 function Section4News(){
     return (
@@ -10,11 +10,11 @@ function Section4News(){
           </div>
         </div>
         <div className="flex flex-col gap-5 mt-5">
-          <Card1 />
+          <Card4 />
           <hr />
-          <Card1 />
+          <Card4 />
           <hr />
-          <Card1 />
+          <Card4 />
         </div>
       </div>
     );

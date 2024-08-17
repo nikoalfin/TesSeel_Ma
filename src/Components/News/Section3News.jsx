@@ -10,7 +10,7 @@ function Section3News(){
           </div>
           <button className="w-32 h-12 bg-cyan-200 border-[#0090ff] border-2 rounded-lg text-[#0090ff]">Lihat Semua</button>
         </div>
-        <div className="flex items-center justify-center gap-6 flex-wrap mt-12">
+        <div className="flex items-center justify-center flex-wrap mt-12 gap-4">
           <Card3 />
           <Card3 />
           <Card3 />

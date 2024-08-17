@@ -13,12 +13,12 @@ function Section2News(){
           <img src={Image6} alt="" className="w-12 h-12" />
           <div className="font-Inter">
             <form>
-              {/* <input type="textar" placeholder="" className="" /> */}
-              <textarea name="" id="" className="w-[710px] h-44 outline-none border-2 rounded-lg p-2 text-[#959EA9] resize-none">
+          
+              <textarea name="" id="" className="w-[480px] h-40 outline-none border-2 text-sm rounded-lg p-2 text-[#959EA9] resize-none">
                 Apa yang ingin anda tanyakan?
               </textarea>
             </form>
-            <p className="text-[#959EA9] ml-[670px]">0/50</p>
+            <p className="text-[#959EA9] ml-[430px]">0/50</p>
             <button className="w-16 h-10 rounded-lg bg-[#0090FF] text-white font-Inter text-sm">Kirim</button>
           </div>
         </div>
@@ -33,7 +33,7 @@ function Section2News(){
               <h5>UJANG YUSMEIDI S.P., M.Agr.</h5>
               <p className="text-xs">28 Mar 2024 11:15</p>
             </div>
-            <p className="my-4">Mohon maaf, apakah sertifikatnya sudah tidak dapat diunduh ? Karena saya mau download ada konfirmasi bahwa TOTP aktivasi salah Bagaimana ya solusinya ?</p>
+            <p className="my-3 text-sm">Mohon maaf, apakah sertifikatnya sudah tidak dapat diunduh ? Karena saya mau download ada konfirmasi bahwa TOTP aktivasi salah Bagaimana ya solusinya ?</p>
             <button className="text-[#0090FF] font-semibold text-sm">Balas</button>
 
             <div className="flex items-start gap-2 mt-5">
@@ -43,7 +43,7 @@ function Section2News(){
                   <h5>DINA RIKHA RIYANAWATI, S.Pd</h5>
                   <p className="text-xs">28 Mar 2024 11:15</p>
                 </div>
-                <p className="my-4">saya mengunduh sertifikatnya kok juga belumbisa</p>
+                <p className="my-3 text-sm">saya mengunduh sertifikatnya kok juga belumbisa</p>
                 <button className="text-[#0090FF] font-semibold text-sm">Balas</button>
               </div>
             </div>

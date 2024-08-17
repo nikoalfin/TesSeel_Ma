@@ -12,7 +12,7 @@ function DetailNews() {
     <section className="relative w-full">
       <Header />
 
-      <div className="max-w-[1440px] mx-auto w-full h-auto px-36 py-12">
+      <div className="max-w-[1440px] mx-auto w-full h-auto px-14 py-12">
         <div className="flex items-center gap-2 h-28 w-36 mt-20 text-[#959EA9] font-semibold">
           <p>
             <IoHomeOutline />
@@ -28,12 +28,12 @@ function DetailNews() {
           <p className="hover:cursor-pointer">Detail</p>
         </div>
         <div className="flex items-start gap-7">
-          <div className="w-[70%]">
+          <div className="w-[60%]">
             <Section1News />
             <Section2News />
             <Section3News />
           </div>
-          <div className="w-[30%]">
+          <div className="w-[38%]">
             <Section4News />
           </div>
         </div>
