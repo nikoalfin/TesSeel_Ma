@@ -1,6 +1,7 @@
 import Card1 from "../Card/Card1";
 
-function section2Home(){
+function section2Home(props){
+  const {onClick}=props;
   return (
     <section className="relative w-full">
       <div className="max-w-[1440px] mx-auto w-full h-auto px-36 py-12">
@@ -10,9 +11,9 @@ function section2Home(){
         </div>
 
         <div className="flex items-center justify-center gap-10 mt-12">
-          <Card1 />
-          <Card1 />
-          <Card1 />
+          <Card1 onClick={onClick} />
+          <Card1 onClick={onClick} />
+          <Card1 onClick={onClick} />
         </div>
       </div>
     </section>

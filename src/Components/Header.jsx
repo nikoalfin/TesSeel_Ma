@@ -1,14 +1,34 @@
-import Logo from '../assets/img/logo.png';
+import { useEffect, useState } from 'react';
 import LogoWhite from '../assets/img/Logo-white.png';
+import LogoBlue from '../assets/img/Logo.png';
 import { useFilter } from '../Context/FilterContext';
 
 function Header() {
   const { Filter, setFilter } = useFilter();
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      if (scrollTop > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <section className="fixed w-full border-b-2 z-10 bg-[#0090FF] text-white">
+    <section className={`fixed w-full border-b-2 z-10 transition-colors duration-300 ease-in-out ${isScrolled ? 'bg-[#0090FF] text-white' : 'bg-transparent text-black'} `}>
       <div className="flex justify-around items-center max-w-[1440px] mx-auto w-full h-[80px]">
         <div className="flex justify-center items-center gap-2">
-          <img src={LogoWhite} alt="Logo" className="w-10 h-10" />
+          <img src={isScrolled ? LogoWhite : LogoBlue} alt="Logo" className="w-10 h-10" />
           <h1 className="font-bold font">Berita Kini</h1>
         </div>
         <div>

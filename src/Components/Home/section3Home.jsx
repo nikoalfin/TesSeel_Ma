@@ -1,11 +1,13 @@
 import Card2 from '../Card/Card2';
 import { IoSearchOutline } from 'react-icons/io5';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useFilter } from '../../Context/FilterContext';
 import ReactPaginate from 'react-paginate';
 
-function Section3Home() {
+function Section3Home(props) {
+  const{onClick}=props;
+
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -60,7 +62,7 @@ function Section3Home() {
 
         <div className="flex items-center justify-center gap-12 flex-wrap mt-12">
           {currentPageData.map((item, i) => (
-            <Card2 key={i} img={item.thumbnail} title={item.title} date={item.pubDate} type="Nasional" />
+            <Card2 key={i} img={item.thumbnail} title={item.title} date={item.pubDate} type="Nasional" onClick={onClick}/>
           ))}
         </div>
         <div className="flex items-center mt-14">
